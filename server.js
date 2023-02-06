@@ -32,3 +32,6 @@ app.use('/api/issues', require('./routes/api/issues'));
 app.use('/api/locations', require('./routes/api/locations'));
 app.use('/', require('./routes/index'));
 app.listen(PORT, () => { console.log(`Server listening on port ${PORT}...`); });
+
+// Export the Express API as a module
+module.exports = app;
